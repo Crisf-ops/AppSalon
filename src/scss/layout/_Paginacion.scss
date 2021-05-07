@@ -1,0 +1,31 @@
+.paginacion{
+    display: flex;
+    justify-content: space-between;
+    margin-top: $separacion;
+
+    button{
+        background-color: $azul;
+        padding: 1rem 3rem;
+        display: block;
+        color: $blanco;
+        text-align: center;
+        border: none;
+        font-weight: $bold;
+        text-transform: uppercase;
+        font-size: 2rem;
+        border-radius: 1rem;
+
+        &.ocultar{
+            //oculta el elemento pero no toma su posicion
+            // display: none;
+            
+            //No te veas pero sigues tomando la misma posicion
+            visibility: hidden;
+        }
+        
+        &:hover{
+            cursor: pointer;
+        }
+        
+    }
+}

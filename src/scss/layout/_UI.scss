@@ -1,0 +1,42 @@
+body{
+    background-color: $negro;
+    // background-image: url('/build/img/1.webp');
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contenedor-estetica{
+    @include tablet{
+        @include grid(2,$separacion);
+        height: 100vh;
+    }
+    .imagen{
+        height: 30rem;
+        background-image: url('/build/img/1.webp');
+        background-size: cover;
+        background-position: center center;
+        @include tablet{
+            height: auto;
+        }
+    }
+}
+
+.app{
+    width: 95%;
+    margin: 0 auto;
+    padding-top: $separacion / 2;
+
+    .seccion{
+        display: none;
+        margin-top: $separacion / 2;
+
+        // &:first-of-type{
+        //     display: block;
+        // }
+    }
+}
+
+.mostrar-seccion{
+    display: block !important;
+}
